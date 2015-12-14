@@ -964,7 +964,7 @@ ColVis.defaults = {
 	sShowAll: 'Show All',
 
 	/**
-	 * Position of the collection menu when shown - align "left" or "right"
+	 * Position of the collection Menu when shown - align "left" or "right"
 	 *  @property sAlign
 	 *  @type     string
 	 *  @default  left

@@ -6196,7 +6196,7 @@
 				_fnLanguageCompat( oInit.oLanguage );
 			}
 			
-			// If the length menu is given, but the init display length is not, use the length menu
+			// If the length Menu is given, but the init display length is not, use the length Menu
 			if ( oInit.aLengthMenu && ! oInit.iDisplayLength )
 			{
 				oInit.iDisplayLength = $.isArray( oInit.aLengthMenu[0] ) ?
@@ -13259,7 +13259,7 @@
 		"fnFormatNumber": null,
 	
 		/**
-		 * List of options that can be used for the user selectable length menu.
+		 * List of options that can be used for the user selectable length Menu.
 		 * Note that this parameter will be set by the initialisation routine. To
 		 * set a default use {@link DataTable.defaults}.
 		 *  @type array

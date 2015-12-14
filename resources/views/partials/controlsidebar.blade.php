@@ -20,7 +20,7 @@
                         </div>
                     </a>
                 </li>
-            </ul><!-- /.control-sidebar-menu -->
+            </ul><!-- /.control-sidebar-Menu -->
 
             <h3 class="control-sidebar-heading">Tasks Progress</h3>
             <ul class='control-sidebar-menu'>
@@ -35,7 +35,7 @@
                         </div>
                     </a>
                 </li>
-            </ul><!-- /.control-sidebar-menu -->
+            </ul><!-- /.control-sidebar-Menu -->
 
         </div><!-- /.tab-pane -->
         <!-- Stats tab content -->

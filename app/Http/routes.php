@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+view()->composer(
+    'partials.sidebar',
+    'MenuWithAuthentication\Http\ViewComposers\SidebarComposer'
+);

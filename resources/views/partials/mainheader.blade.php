@@ -28,7 +28,7 @@
                     <ul class="dropdown-menu">
                         <li class="header">You have 4 messages</li>
                         <li>
-                            <!-- inner menu: contains the messages -->
+                            <!-- inner Menu: contains the messages -->
                             <ul class="menu">
                                 <li><!-- start message -->
                                     <a href="#">
@@ -45,11 +45,11 @@
                                         <p>Why not buy a new awesome theme?</p>
                                     </a>
                                 </li><!-- end message -->
-                            </ul><!-- /.menu -->
+                            </ul><!-- /.Menu -->
                         </li>
                         <li class="footer"><a href="#">See All Messages</a></li>
                     </ul>
-                </li><!-- /.messages-menu -->
+                </li><!-- /.messages-Menu -->
 
                 <!-- Notifications Menu -->
                 <li class="dropdown notifications-menu">
@@ -83,7 +83,7 @@
                     <ul class="dropdown-menu">
                         <li class="header">You have 9 tasks</li>
                         <li>
-                            <!-- Inner menu: contains the tasks -->
+                            <!-- Inner Menu: contains the tasks -->
                             <ul class="menu">
                                 <li><!-- Task item -->
                                     <a href="#">
@@ -118,7 +118,7 @@
                         <span class="hidden-xs">{{ Auth::user()->name }}</span>
                     </a>
                     <ul class="dropdown-menu">
-                        <!-- The user image in the menu -->
+                        <!-- The user image in the Menu -->
                         <li class="user-header">
                             <img src="/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                             <p>

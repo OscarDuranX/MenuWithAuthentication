@@ -339,7 +339,7 @@
         '</div>';
         break;
       case 'dropdown':
-        template = '<div class="bootstrap-timepicker-widget dropdown-menu">'+ templateContent +'</div>';
+        template = '<div class="bootstrap-timepicker-widget dropdown-Menu">'+ templateContent +'</div>';
         break;
       }
 

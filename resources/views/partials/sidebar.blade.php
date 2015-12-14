@@ -42,7 +42,14 @@
                     <li><a href="#">Link in level 2</a></li>
                 </ul>
             </li>
-        </ul><!-- /.sidebar-menu -->
+            @foreach($menu as $menuitem)
+                {{ $menuitem }}
+            @endforeach
+
+
+
+
+        </ul><!-- /.sidebar-Menu -->
     </section>
     <!-- /.sidebar -->
 </aside>
