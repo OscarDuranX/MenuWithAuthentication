@@ -19,7 +19,7 @@
 
 {{--</ul><!-- /.sidebar-Menu -->--}}
 
-<li class="active">
+<li class="active" id="{{ $id }}">
     @if ($url != null)
         <a href="{{ $url }}">
     @endif

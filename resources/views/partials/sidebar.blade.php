@@ -42,6 +42,7 @@
                     <li><a href="#">Link in level 2</a></li>
                 </ul>
             </li>
+
             @foreach($menu as $menuitem)
                 {{ $menuitem }}
             @endforeach

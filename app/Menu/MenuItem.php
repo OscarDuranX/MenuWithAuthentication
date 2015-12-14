@@ -12,6 +12,10 @@ namespace MenuWithAuthentication\Menu;
  * Class MenuItem
  * @package MenuWithAuthentication\Menu
  */
+/**
+ * Class MenuItem
+ * @package MenuWithAuthentication\Menu
+ */
 class MenuItem
 {
     /**
@@ -39,13 +43,18 @@ class MenuItem
      * @var
      */
     protected $permission;
+    /**
+     * @var
+     */
+    private $id;
 
     /**
      * MenuItem constructor.
      */
-    public function __construct()
+    public function __construct($id)
     {
 
+        $this->id = $id;
     }
 
     /**
@@ -132,18 +141,25 @@ class MenuItem
         return $this;
     }
 
+    /**
+     * @return string
+     */
     public function __toString()
     {
         return $this->render();
     }
 
+    /**
+     * @return string
+     */
     public function render()
     {
         $data = array();
         $data['url']= $this->url;
         $data['icon']= $this->icon;
         $data['title']= $this->title;
-        $data['permission']= $this->permission;
+        $data['id']= $this->id;
+        //$data['permission']= $this->permission;
        // $data['user']= $this->user;
        // $data['rol']= $this->rol;
         return (String) view('menuitem',$data);

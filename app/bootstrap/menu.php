@@ -1,6 +1,6 @@
 <?php
 //Home
-MenuWithAuthentication::menu()
+MenuWithAuthentication::menu("home")
     -> title('Home')
     ->icon('fa-dashboard')
     ->url('/home')
@@ -9,16 +9,22 @@ MenuWithAuthentication::menu()
     ->user('Oscar');
 
 //Another Links
-MenuWithAuthentication::menu()
+MenuWithAuthentication::menu("anotLink")
     -> title('Another links')
     ->user(5);
 
 //Multilevel
-MenuWithAuthentication::menu() -> title('Multilevel')->icon('fa-battery-full');
-    MenuWithAuthentication::menu() -> title('Link in lvl 1');
-    MenuWithAuthentication::menu() -> title('Link in lvl 2');
+MenuWithAuthentication::menu("multilevel")
+    -> title('Multilevel')
+    ->icon('fa-battery-full');
+    MenuWithAuthentication::menu("link1")
+        -> title('Link in lvl 1');
+    MenuWithAuthentication::menu("link2")
+        -> title('Link in lvl 2');
 
-MenuWithAuthentication::menu()
+MenuWithAuthentication::menu("link4")
     -> title('Últim menú')
     ->icon('fa-briefcase')
     ->url('https://www.google.es/');
+
+//$menuHome = MenuWithAuthentication::menu("home");
