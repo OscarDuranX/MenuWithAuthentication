@@ -8,7 +8,8 @@
         "php": ">=5.5.9",
         "laravel/framework": "5.1.*",
         "barryvdh/laravel-debugbar": "^2.0",
-        "acacha/admin-lte-template-laravel": "1.*"
+        "acacha/admin-lte-template-laravel": "1.*",
+        "zizaco/entrust": "dev-laravel-5"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -50,4 +51,5 @@
     "config": {
         "preferred-install": "dist"
     }
+
 }
