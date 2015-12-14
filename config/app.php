@@ -145,6 +145,7 @@ return [
         MenuWithAuthentication\Providers\EventServiceProvider::class,
         MenuWithAuthentication\Providers\RouteServiceProvider::class,
 
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         Acacha\AdminLTETemplateLaravel\app\Providers\AdminLTETemplateServiceProvider::class,
 
@@ -197,9 +198,11 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
-        'Debugbar' => Barryvdh\Debugbar\Facade::class,
-        'Entrust' => 'Zizaco\Entrust\EntrustFacade'
 
+
+        'Debugbar'  => Barryvdh\Debugbar\Facade::class,
+        'Entrust' => 'Zizaco\Entrust\EntrustFacade',
+        'MenuWithAuthentication' => MenuWithAuthentication\MenuWithAuthentication::class,
 
 
     ],

@@ -46,15 +46,42 @@ class MenuItem
     /**
      * @var
      */
+    protected $level;
+    /**
+     * @var
+     */
     private $id;
+
+    protected $subItems = [];
+
+    /**
+     * @var MenuItem
+     */
+    public static $current;
 
     /**
      * MenuItem constructor.
      */
     public function __construct($id)
     {
-
         $this->id = $id;
+        if(is_null(static::$current)){
+            static::$current = $this;
+            $this->level(0);
+        }else{
+            static::$current = addItem($this);
+            $this->level(static::$current->level()+1);
+        }
+    }
+
+    /**
+     * @param $item
+     * @return $this
+     */
+    public function addItem($item)
+    {
+        $this->subItems[] = $item;
+        return $this;
     }
 
     /**
@@ -138,6 +165,20 @@ class MenuItem
         }
 
         $this->$permission= $$permission;
+        return $this;
+    }
+
+    /**
+     * @param null $level
+     * @return $this
+     */
+    public function level($level=null)
+    {
+        if($level==null){
+            return $this->level;
+        }
+
+        $this->level= $level;
         return $this;
     }
 
